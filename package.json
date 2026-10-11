@@ -1,0 +1,15 @@
+{
+  "name": "aishwarya-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website of Aishwarya Pawar (static, no runtime dependencies)",
+  "scripts": {
+    "build": "node scripts/build.mjs && tailwindcss -c tailwind.config.js -i src/input.css -o dist/assets/css/style.css --minify",
+    "preview": "npx --yes serve dist"
+  },
+  "devDependencies": {
+    "@fontsource-variable/caveat": "^5.1.0",
+    "@fontsource-variable/dm-sans": "^5.1.0",
+    "tailwindcss": "^3.4.17"
+  }
+}
